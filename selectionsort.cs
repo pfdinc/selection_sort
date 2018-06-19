@@ -12,16 +12,13 @@ namespace selectionsort
 
         public static void SelectoinSort(int[] arr)
         {
-
-            int theLargest = 0;
-
+           int theLargest = 0;
+            
             for (int unsortedArr = arr.Length - 1; unsortedArr > 0; unsortedArr--)
             {
-
                 for (int i = 0; i <= unsortedArr; i++)
                 {
-
-                    if (arr[i] > arr[theLargest])
+                   if (arr[i] > arr[theLargest])
                     {
                         theLargest = i;
 
@@ -34,7 +31,7 @@ namespace selectionsort
             PrintFunction(arr);
         }
 
-
+        
         public static void PrintFunction(int[] arr)
         {
 
